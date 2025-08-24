@@ -53,7 +53,7 @@ sentry-syshealth/
   │   ├── package.json      # Frontend scripts and dependencies
   │   └── .env.example      # Example dashboard environment variables
   │
-  └── README.md             # Project documentation
+  └── README.md             # Project documentation 
 
 Quick Start (Local Dev)
 -----------------------
