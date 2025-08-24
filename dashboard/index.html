@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SysHealth Dashboard</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 0; padding: 24px; }
+      table { border-collapse: collapse; width: 100%; }
+      th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eee; }
+      .pill{ padding:2px 8px; border-radius:999px; font-size:12px; display:inline-block }
+      .ok{ background:#E6F6EA; color:#177245 } .issue{ background:#FDE7E9; color:#8A1C1C } .unknown{ background:#EEE; color:#333 }
+      .filters { display:flex; gap:8px; margin-bottom:12px; }
+      input, select { padding:6px 8px; }
+      .muted{ color:#666; font-size:12px }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

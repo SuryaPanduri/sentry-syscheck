@@ -1,0 +1,23 @@
+{
+    "name": "syshealth-agent",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+      "dev": "node src/index.js",
+      "build:cjs": "esbuild src/index.js --bundle --platform=node --format=cjs --target=node18 --external:dotenv --outfile=build/index.cjs",
+      "build:bin": "pkg run.cjs --targets node18-macos-arm64,node18-linux-x64,node18-win-x64 --output dist/syshealth-agent",
+      "build": "npm run build:cjs && npm run build:bin"
+    },
+    "dependencies": {
+      "dotenv": "^16.4.5"
+    },
+    "devDependencies": {
+      "pkg": "^5.8.1",
+      "esbuild": "^0.23.0"
+    },
+    "pkg": {
+      "scripts": ["build/index.cjs"],
+      "assets": []
+    }
+  }
