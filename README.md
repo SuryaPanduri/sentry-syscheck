@@ -34,27 +34,6 @@ Dashboard (frontend):
 - Pulse animation = agent alive, Offline label = agent stale.
 - Filter/search, CSV export.
 
-Project Structure
------------------
-sentry-syshealth/
-  ├── agent/                # Cross-platform agent
-  │   ├── dist/             # Built binaries (macOS/Linux/Windows)
-  │   ├── src/              # Agent source code (system checks, reporting logic)
-  │   ├── package.json      # Build configuration (pkg)
-  │   └── .env.example      # Example agent environment file
-  │
-  ├── server/               # Backend API (Express + MongoDB)
-  │   ├── src/              # API source code (endpoints, DB models, HMAC)
-  │   ├── package.json      # API scripts and dependencies
-  │   └── .env.example      # Example server environment variables
-  │
-  ├── dashboard/            # Frontend Dashboard (React + Vite)
-  │   ├── src/              # UI components, pages
-  │   ├── package.json      # Frontend scripts and dependencies
-  │   └── .env.example      # Example dashboard environment variables
-  │
-  └── README.md             # Project documentation 
-
 Quick Start (Local Dev)
 -----------------------
 1. Start the Server
