@@ -250,8 +250,6 @@ async function cycle() {
 }
 
 async function main() {
-  // initial jitter 0–2 min
-  await wait(Math.floor(Math.random() * 120000));
   while (true) {
     await cycle();
     const mins = INTERVAL_MINUTES + Math.floor(Math.random() * 5);
