@@ -211,6 +211,7 @@ Start-ScheduledTask -TaskName "SysHealth Agent"
 ```
 
 🎯 Demo Flow
+
 	1.	Deploy API (Render) + Dashboard (Vercel)
 	2.	Run Agent binary (macOS/Linux/Windows)
 	3.	Open Dashboard → see machine appear with OS, checks, last check-in
@@ -220,6 +221,7 @@ Start-ScheduledTask -TaskName "SysHealth Agent"
 ⸻
 
 🔐 Security
+
 	•	Agents sign payloads with HMAC (INGEST_SECRET)
 	•	Server verifies before accepting
 	•	Only minimal machine info + health results are sent
